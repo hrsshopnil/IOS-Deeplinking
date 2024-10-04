@@ -6,20 +6,56 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		B3F300442CAFC4850059421B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3E770522CAC747400094991 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3E770592CAC747400094991;
+			remoteInfo = DeepLinking;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		B3E7705A2CAC747400094991 /* DeepLinking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeepLinking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3F300402CAFC4850059421B /* DeepLinkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeepLinkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B30667AD2CB04D05007B11A0 /* Exceptions for "DeepLinking" folder in "DeepLinking" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B3E770592CAC747400094991 /* DeepLinking */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		B3E7705C2CAC747400094991 /* DeepLinking */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B30667AD2CB04D05007B11A0 /* Exceptions for "DeepLinking" folder in "DeepLinking" target */,
+			);
 			path = DeepLinking;
+			sourceTree = "<group>";
+		};
+		B3F300412CAFC4850059421B /* DeepLinkingTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = DeepLinkingTests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B3E770572CAC747400094991 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3F3003D2CAFC4850059421B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				B3E7705C2CAC747400094991 /* DeepLinking */,
+				B3F300412CAFC4850059421B /* DeepLinkingTests */,
 				B3E7705B2CAC747400094991 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				B3E7705A2CAC747400094991 /* DeepLinking.app */,
+				B3F300402CAFC4850059421B /* DeepLinkingTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +108,29 @@
 			productReference = B3E7705A2CAC747400094991 /* DeepLinking.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B3F3003F2CAFC4850059421B /* DeepLinkingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3F300462CAFC4850059421B /* Build configuration list for PBXNativeTarget "DeepLinkingTests" */;
+			buildPhases = (
+				B3F3003C2CAFC4850059421B /* Sources */,
+				B3F3003D2CAFC4850059421B /* Frameworks */,
+				B3F3003E2CAFC4850059421B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3F300452CAFC4850059421B /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				B3F300412CAFC4850059421B /* DeepLinkingTests */,
+			);
+			name = DeepLinkingTests;
+			packageProductDependencies = (
+			);
+			productName = DeepLinkingTests;
+			productReference = B3F300402CAFC4850059421B /* DeepLinkingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -82,6 +143,11 @@
 				TargetAttributes = {
 					B3E770592CAC747400094991 = {
 						CreatedOnToolsVersion = 16.0;
+					};
+					B3F3003F2CAFC4850059421B = {
+						CreatedOnToolsVersion = 16.0;
+						LastSwiftMigration = 1600;
+						TestTargetID = B3E770592CAC747400094991;
 					};
 				};
 			};
@@ -100,12 +166,20 @@
 			projectRoot = "";
 			targets = (
 				B3E770592CAC747400094991 /* DeepLinking */,
+				B3F3003F2CAFC4850059421B /* DeepLinkingTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		B3E770582CAC747400094991 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3F3003E2CAFC4850059421B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +196,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B3F3003C2CAFC4850059421B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B3F300452CAFC4850059421B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B3E770592CAC747400094991 /* DeepLinking */;
+			targetProxy = B3F300442CAFC4850059421B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		B3E770662CAC747500094991 /* Debug */ = {
@@ -255,6 +344,7 @@
 				DEVELOPMENT_TEAM = 9M2847JBF8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DeepLinking/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -284,6 +374,7 @@
 				DEVELOPMENT_TEAM = 9M2847JBF8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DeepLinking/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +390,45 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B3F300472CAFC4850059421B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9M2847JBF8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "shopnil-hasan.DeepLinkingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeepLinking.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DeepLinking";
+			};
+			name = Debug;
+		};
+		B3F300482CAFC4850059421B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9M2847JBF8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "shopnil-hasan.DeepLinkingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeepLinking.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DeepLinking";
 			};
 			name = Release;
 		};
@@ -319,6 +449,15 @@
 			buildConfigurations = (
 				B3E770692CAC747500094991 /* Debug */,
 				B3E7706A2CAC747500094991 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3F300462CAFC4850059421B /* Build configuration list for PBXNativeTarget "DeepLinkingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3F300472CAFC4850059421B /* Debug */,
+				B3F300482CAFC4850059421B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
